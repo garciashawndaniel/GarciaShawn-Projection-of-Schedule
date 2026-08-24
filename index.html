@@ -12,7 +12,8 @@
             color: #fffef9;
             min-height: 100vh;
         }
-         .planner-card {
+
+        .planner-card {
             border: 0.5px solid #868686;
             background-color: #303234;
             padding: 20px;
@@ -498,15 +499,17 @@
             </div>
         </div>
     </div>
- <script>
-    function calculateHours() {
+
+    <script>
+        function calculateHours() {
             const required = parseFloat(document.getElementById('requiredHours').value) || 0;
             const rendered = parseFloat(document.getElementById('renderedHours').value) || 0;
 
             const remaining = Math.max(0, required - rendered);
             document.getElementById('remainingHoursDisplay').innerText = remaining.toFixed(1) + " hrs";
         }
-</script>
+    </script>
+
 </body>
 
 </html>
